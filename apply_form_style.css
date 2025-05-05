@@ -1,0 +1,44 @@
+#applyForm {
+    margin-top: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+#applyForm h2 {
+    font-size: 24px; /* Adjust the font size */
+    color: #005aa7;  /* Adjust the color */
+    text-align: center; /* Center align the text */
+    margin-bottom: 20px; 
+
+}
+#applyForm label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#applyForm input, #applyForm select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.button-container {
+    margin-left:50px; 
+}
+
+#applyForm button {
+    background-color: #005aa7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top:30px;
+    margin-left:45px;
+}
+
+#applyForm button:hover {
+    background-color: #004076;
+}

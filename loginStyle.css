@@ -1,0 +1,72 @@
+/*loginStyles.css*/
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #005aa7, #fffde4);
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.utm-logo {
+    position: absolute; /* Position the logo absolutely */
+    top: 50%; /* Move the logo to the middle of the viewport vertically */
+    left: 10%; /* Position the logo 10% from the left side of the viewport */
+    transform: translateY(-50%); /* Center the logo vertically */
+    width: 30%; /* Increase the width to 30% */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.login-container {
+    background-color: white;
+    border-radius: 70px 0px 0px 70px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50%; /* Adjust width to 50% of the viewport */
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    align-items: center; /* Center horizontally */
+    justify-content: center;
+}
+
+.login-container h2 {
+    margin-bottom: 50px; /* Move the title above the fields */
+    font-size: 30px;
+    color:#004076;
+}
+
+.login-container label {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color:#004076;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    margin-left: 10px;
+    background: linear-gradient(to right, #005aa7, #b8d6f0);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-container button:hover {
+    background: linear-gradient(to right, #004076, #b8d6f0);
+}

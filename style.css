@@ -1,0 +1,217 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 20px;
+}
+
+.main-content{
+    margin-left: 140px; /* Default margin-left for .main-content */
+    transition: margin-left 0.3s ease; /* Smooth transition for margin-left */
+}
+
+.title{
+    margin-top:50px;
+    padding-bottom: 30px;
+}
+
+.title h1{
+    color: #004076;
+}
+
+.title p{
+    color:#005aa7;
+}
+
+h3{
+    padding-bottom:10px;
+    color: #004076;
+}
+
+.statistic {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping if there isn't enough space */
+    gap: 70px; /* Adds space between each box */
+    padding-bottom: 50px;
+    padding-right: 50px;
+}
+
+.stat-box {
+    background-color: #f9f9f9;
+    padding: 30px; 
+    flex: 1; 
+    min-width: 70px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.stat-box-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stat-box-content img{
+    width:50px;
+    height:50px;
+}
+
+.stat-box-text p {
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.search-filter {
+    display: flex;
+    justify-content:flex-start;
+    gap:70px;
+    padding-bottom: 30px;
+}
+
+#search {
+    border-radius: 50px; 
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: none;
+    background-image: url('images/search.png'); 
+    background-size: 15px 15px;
+    background-repeat: no-repeat; 
+    background-position: 10px center; 
+    padding-left: 40px;
+    padding-right: 80px;
+}
+
+.filter-menu{
+    display: flex;
+    padding-left: 50px;
+    border-radius: 50px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-menu button{
+    margin-right: 50px;
+    background-color: white;
+    color:#004076;
+    border-radius: 20px;
+}
+
+.filter-menu button:hover{
+    background-color: #b8d6f0;
+    color: white;
+}
+
+.filter-menu button.active {
+    background-color: #62a2da;
+    color: white;
+}
+
+#addUserBtn{
+    border-radius: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: none;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    border-radius: 30px; 
+}
+
+.cancelBtn{
+    margin-top:20px;
+    margin-left:60px;
+}
+
+.close, .cancelBtn {
+    background-color: white;
+    color:#004076;
+    border:2px solid #004076;
+}
+
+.close{
+    border: none;
+    float:top right;
+    margin-bottom: 20px;
+}
+
+.close:hover, .close:focus, .cancelBtn:hover, .cancelBtn:focus {
+    background-color: white;
+    color:#004076;
+    border:2px solid #004076;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+button {
+    background-color: #005aa7;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    padding:5px 15px;
+    margin-right:10px;
+}
+
+button:hover {
+    background-color: #004076;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    display: flex; /* This will make .modal-content a flex container */
+    flex-direction: column; /* This will stack the children vertically */
+    justify-content: center; /* This will center the children horizontally */
+    align-items: center; /* This will center the children vertically */
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    height: 75%;
+    border-radius: 10px;
+}
+
+.modal-content h2{
+    color: #004076;
+    margin-bottom: 20px;
+}
+
+.modal-content input[type=text], input[type=password], input[type=email], select, input[type=number]{
+    margin:10px;
+    padding:5px;
+    border: 1px solid #004076;
+    border-radius: 20px;
+}
+
